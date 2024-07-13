@@ -1,0 +1,200 @@
+.mainRegistration {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: #1d1d1d;
+}
+
+.registration {
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  background: #2c2c2c;
+  padding: 47px;
+  padding-bottom: 57px;
+  color: #fff;
+  border-radius: 17px;
+  padding-bottom: 50px;
+  font-size: 1.3em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* .registration textarea, */
+
+.registration input[type="tel"],
+.registration input[type="email"],
+.registration input[type="text"],
+.registration input[type="password"] {
+  opacity: 1;
+  display: block;
+  border: none;
+  outline: none;
+  width: 80%;
+  padding: 13px 18px;
+  margin: 20px 0 0 0;
+  font-size: 0.8em;
+  border-radius: 100px;
+  background: #3c3c3c;
+  color: #fff;
+  animation: bounce 1s;
+  -webkit-appearance: none;
+}
+
+.registration input[type="submit"],
+.registration input[type="button"],
+.h1 {
+  border: 0;
+  outline: 0;
+  width: 30%;
+  padding: 13px;
+  margin: 40px 0 0 0;
+  border-radius: 500px;
+  font-weight: 600;
+  animation: bounce2 1.3s;
+}
+
+.btnRegister {
+  padding: 0px !important;
+  margin: 40px 0 0 0;
+  border-radius: 500px;
+  font-weight: 600;
+  animation: bounce2 1.3s;
+  border: 0;
+  outline: 0;
+  width: 100px;
+  height: 50px;
+}
+
+.h1 {
+  padding: 0;
+  position: relative;
+  /* top: -35px; */
+  display: block;
+  margin-bottom: -0px;
+  font-size: 1.3em;
+}
+
+.btnRegister {
+  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  color: #fff;
+  padding: 0px !important;
+  margin: 40px 0 0 0;
+  border-radius: 500px;
+  font-weight: 600;
+  animation: bounce2 1.3s;
+  border: 0;
+  outline: 0;
+  width: 150px;
+  height: 50px;
+}
+
+.btnRegister:hover {
+  background: linear-gradient(144deg, #1e1e1e, 20%, #1e1e1e 50%, #1e1e1e);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.ui {
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#b563ff, #535efc, #0ec8ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(0.25turn, #535efc, #0ec8ee, #0ec8ee);
+  border-image-slice: 1;
+  display: inline;
+}
+
+.inputBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .registration input[type="text"],
+  .registration input[type="tel"],
+  .registration input[type="email"],
+  .registration input[type="password"] {
+    margin-top: 10px !important;
+  }
+
+  .colPosition {
+    padding: 18px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .colPosition .inputBody {
+    width: 100%;
+  }
+
+  .registration {
+    height: 550px;
+  }
+
+  .btnRegister {
+    margin: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .registration {
+    width: 70%;
+    padding: 10px;
+  }
+  .registration input[type="text"],
+  .registration input[type="tel"],
+  .registration input[type="email"],
+  .registration input[type="password"] {
+    padding: 13px;
+    width: 100%;
+  }
+  .registration input[type="submit"],
+  .registration input[type="button"],
+  .h1,
+  .p {
+    width: 50%;
+    animation: bounce2 1.6s;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .btnRegister {
+    size: 10px;
+    width: 100px;
+    font-size: 15px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-250px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce1 {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce2 {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}

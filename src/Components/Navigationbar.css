@@ -1,0 +1,30 @@
+.header{
+    z-index: 1000;
+}
+
+.bg-body-tertiary{
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.navbar-toggler{
+    color: aliceblue;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-collapse {
+    text-align: center !important;
+}
+
+.loginLink{
+    color: white;
+    text-decoration: none;
+}
